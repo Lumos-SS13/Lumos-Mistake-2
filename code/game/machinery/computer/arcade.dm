@@ -74,6 +74,8 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 	light_color = LIGHT_COLOR_GREEN
 	var/list/prize_override
 
+	connectable = FALSE
+
 /obj/machinery/computer/arcade/proc/Reset()
 	return
 
