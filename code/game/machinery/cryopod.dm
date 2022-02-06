@@ -25,6 +25,7 @@
 	var/list/obj/stored_packages = list()
 
 	var/allow_items = TRUE
+	connectable = FALSE
 
 /obj/machinery/computer/cryopod/deconstruct()
 	. = ..()

@@ -28,6 +28,7 @@
 	var/search_page = 0
 	COOLDOWN_DECLARE(library_visitor_topic_cooldown)
 	clockwork = TRUE
+	connectable = FALSE
 
 /obj/machinery/computer/libraryconsole/ui_interact(mob/user)
 	. = ..()
