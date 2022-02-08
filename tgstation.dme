@@ -3824,6 +3824,7 @@
 #include "modular_citadel\code\modules\vectorcrafts\vectorcraft.dm"
 #include "modular_citadel\code\modules\vectorcrafts\vectortruck.dm"
 #include "modular_citadel\code\modules\vectorcrafts\vectorvariants.dm"
+#include "modular_lumos\code\game\objects\structures\tables_racks.dm"
 #include "modular_nostra\code\__DEFINES\actionspeed_modifiers.dm"
 #include "modular_nostra\code\__DEFINES\construction.dm"
 #include "modular_nostra\code\__DEFINES\DNA.dm"

@@ -70,6 +70,7 @@
 #define HAS_TRAIT_NOT_FROM(target, trait, source) (target.status_traits ? (target.status_traits[trait] ? (length(target.status_traits[trait] - source) > 0) : FALSE) : FALSE)
 
 //mob traits
+#define IGNORE_PSEUDO_Z_AXIS 	"ignore_pseudo_z_axis" //hate lol
 #define TRAIT_BLIND 			"blind"
 #define TRAIT_MUTE				"mute"
 #define TRAIT_EMOTEMUTE			"emotemute"
@@ -163,6 +164,7 @@
 #define TRAIT_NOGUT				"nogutting"		//Your chest cant be gutted of organs
 #define TRAIT_NODECAP			"nodecapping"	//Your head cant be cut off in combat
 #define TRAIT_EXEMPT_HEALTH_EVENTS	"exempt-health-events"
+#define TRAIT_FLOORED			"floored" //can't stand up
 #define TRAIT_NO_MIDROUND_ANTAG	"no-midround-antag" //can't be turned into an antag by random events
 #define TRAIT_PUGILIST	"pugilist" //This guy punches people for a living
 #define TRAIT_NOPUGILIST "nopugilist" // for preventing ((((((((((extreme)))))))))) punch stacking
@@ -223,7 +225,7 @@
 #define TRAIT_HUMAN_NO_RENDER			"human_no_render"
 #define TRAIT_TRASHCAN					"trashcan"
 ///Used for fireman carry to have mobe not be dropped when passing by a prone individual.
-#define TRAIT_BEING_CARRIED "being_carried"	
+#define TRAIT_BEING_CARRIED "being_carried"
 
 // mobility flag traits
 // IN THE FUTURE, IT WOULD BE NICE TO DO SOMETHING SIMILAR TO https://github.com/tgstation/tgstation/pull/48923/files (ofcourse not nearly the same because I have my.. thoughts on it)
