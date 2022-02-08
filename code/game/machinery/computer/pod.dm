@@ -14,6 +14,7 @@
 	var/range = 4
 	/// Countdown timer for the mass driver's delayed launch functionality.
 	COOLDOWN_DECLARE(massdriver_countdown)
+	connectable = FALSE
 
 /obj/machinery/computer/pod/Initialize()
 	. = ..()

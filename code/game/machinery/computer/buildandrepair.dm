@@ -152,6 +152,11 @@
 					new_computer.RefreshParts()
 					new_computer.on_construction()
 
+				var/obj/B = new circuit.build_path (loc, circuit)
+				B.setDir(dir)
+				transfer_fingerprints_to(B)
+				for(var/obj/machinery/computer/selected in range(1,src))
+					selected.update_overlays()
 				qdel(src)
 				return
 	if(user.a_intent == INTENT_HARM)

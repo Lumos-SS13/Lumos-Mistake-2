@@ -213,6 +213,8 @@
 	icon_screen = "detective_tv"
 	pass_flags = PASSTABLE
 
+	connectable = FALSE
+
 /obj/machinery/computer/security/mining
 	name = "outpost camera console"
 	desc = "Used to access the various cameras on the outpost."
