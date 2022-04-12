@@ -498,7 +498,12 @@
 //(this is exclusively used for the rare variant of the stray cargo event!)
 /datum/supply_pack/misc/syndicate/fill(obj/structure/closet/crate/C)
 	var/list/uplink_items = get_uplink_items(SSticker.mode)
+	/* LUMOS EDIT REMOVAL
 	while(crate_value)
+	*/
+	//LUMOS EDIT BEGIN
+	while(crate_value && length(uplink_items))
+	//LUMOS EDIT END
 		var/category = pick(uplink_items)
 		var/item = pick(uplink_items[category])
 		var/datum/uplink_item/I = uplink_items[category][item]
